@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>أقاري ترست مصر | AqaryTrust - سلطة القرار العقاري المستقلة</title>
+    <meta name="title" content="أقاري ترست مصر | AqaryTrust - سلطة القرار العقاري المستقلة">
+    <meta name="description" content="المنصة المستقلة الأولى في مصر لتدقيق القرارات العقارية. نكشف لك الحقائق المجردة، الأسعار العادلة، ومصداقية المطورين باستخدام الذكاء الاصطناعي.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aqarytrust.com/">
+    <meta property="og:title" content="أقاري ترست مصر | سلطة القرار العقاري المستقلة">
+    <meta property="og:description" content="لا تستثمر قبل أن تدقق. نكشف لك فخاخ التسويق ونعطيك السعر العادل في سوق العقارات المصري 2025.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&h=630&auto=format&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="أقاري ترست مصر | سلطة القرار العقاري المستقلة">
+    <meta property="twitter:description" content="الذكاء الاصطناعي في خدمة المستثمر العقاري. تدقيق العقود، تقييم المطورين، وحساب القيمة السوقية الحقيقية.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --font-main: 'Inter', sans-serif;
+            --font-arabic: 'Cairo', sans-serif;
+            --gold-accent: #C5A059;
+            --navy-deep: #0f172a;
+            --cream: #fcfbf7;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-arabic); /* الافتراضي للعربية */
+            background-color: var(--cream);
+            color: var(--navy-deep);
+            overflow-x: hidden;
+        }
+        [lang="en"] body { font-family: var(--font-main); }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .luxury-glass {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(50px);
+            -webkit-backdrop-filter: blur(50px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 10px 40px -5px rgba(15, 23, 42, 0.04);
+        }
+        .noise-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 9999; opacity: 0.025;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3%3Cfilter id='noiseFilter'%3%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3%3C/filter%3%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3%3C/svg%3");
+        }
+        
+        /* Animations */
+        .reveal-up { animation: revealUp 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards; }
+        @keyframes revealUp { from { opacity: 0; transform: translateY(100px); } to { opacity: 1; transform: translateY(0); } }
+        .float-slow { animation: float 10s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+
+        .light-leak {
+            position: absolute; width: 800px; height: 800px;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.05) 0%, rgba(255,255,255,0) 70%);
+            border-radius: 50%; filter: blur(100px); pointer-events: none; z-index: -1;
+            animation: moveLeak 25s infinite alternate ease-in-out;
+        }
+        @keyframes moveLeak { from { transform: translate(-10%, -10%); } to { transform: translate(30%, 30%); } }
+
+        .animate-marquee { animation: marquee 60s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        [dir="rtl"] .animate-marquee { animation: marquee-rtl 60s linear infinite; }
+        @keyframes marquee-rtl { 0% { transform: translateX(0); } 100% { transform: translateX(50%); } }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--cream); }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 20px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--gold-accent); }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div id="root"></div>
+</body>
+</html>
